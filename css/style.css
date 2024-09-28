@@ -140,7 +140,7 @@ nav a:focus {
 .container {
   display: grid;
   grid-template-columns: 1fr 5fr 1fr;
-  gap: 15px
+  grid-gap: 15px;
 }
 
 /* Step 5: Write selector/rule property to add the background image to the 
@@ -149,7 +149,6 @@ first div in the grid  and place it in the grid. */
   grid-column: 1/-1;
   background-image: url("../images/header.jpg");
   background-repeat: no-repeat;
-  background-attachment: fixed;
 }
 
 
@@ -206,8 +205,8 @@ first div in the grid  and place it in the grid. */
 /* Step 8: Write the selector/rule property to style the .text-block class. */
 .text-block {
   text-align: center;
-  justify-content: center;
-  align-content: center;
+  justify-self: center;
+  align-self: center;
 }
 
 /* Add your media query here */
@@ -217,6 +216,7 @@ first div in the grid  and place it in the grid. */
   /* Step 9: Write the selector/rule property to style the nav element */
   nav {
     padding: 30px 0;
+    text-align: right;
   }
 
   /* Step 10: Write the selector/rule property to update the .container class */
@@ -247,4 +247,5 @@ first div in the grid  and place it in the grid. */
     overflow: auto;
   }
 }
+
 /* the border */
